@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Kaushan+Script&family=Righteous&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Francois One", sans-serif;
+  font-size: 400;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  body {
+    flex-direction: column;
+  } 
+  nav {
+    height: 80x;
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #cult-boxes {
+    margin-top: 50px;
+  }
+  #adv-boxes {
+    margin-top: 50px;
+  }
+  
+}
+::-webkit-scrollbar {
+    width: 20px;
+    
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(69, 55, 40, 0.8);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(69, 55, 40, 0.2);
+  border-radius: 20px;
+}
+#index-body {
+  background: url("../images/bagrati cathedral.jpg");
+  background-size:  cover;
+}
+#food-body {
+  background-image: url("../images/supra.jpg");
+  background-size:  cover;
+}
+#about-body {
+  background: url("../images/center.jpg");
+  background-size:  cover;
+}
+#adv-body {
+  background-image: url("../images/sataflia.jpg");
+  background-size:  cover;
+}
+#cult-body {
+  background-image: url("../images/gelati.jpg");
+  background-size:  cover;
+}
+.content {
+  flex-grow:1; 
+}
+
+/* index.html */
+
+nav {  
+  font-family: "Righteous", sans-serif;
+  min-width: 300px; 
+  background-color: rgba(69, 55, 40, 0.7);
+  box-shadow: 2px 3px 5px 1px rgb(230, 115, 0);
+}
+
+nav > ul {
+  list-style-type: none;
+}
+.fa-solid {
+  width: 30px;
+}
+a {
+  font-size: 1.5em;
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 20px 0;
+}
+a:hover {
+  font-weight: bold;
+  color: rgb(230, 115, 0);
+  padding-left: 2px;
+  text-shadow: 1px 1px 3px gray;
+}
+ul {
+  padding-top: 40px;
+}
+header {
+  width: 300px;
+  color: rgb(230, 115, 0);
+  margin-top: -30px;
+  margin-bottom: 80px;
+  font-weight: bold;
+  font-size: 60px;
+}
+#index-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:  center;
+}
+#box1, #box2 {
+  border: 5px solid rgba(57, 97, 119, 0.8);
+  height: auto; 
+  width: 60vw;
+  color:white;
+  padding: 10px;
+  background-color: rgba(69, 55, 40, 0.6);
+  border-radius: 20px 0 20px 0;
+  opacity:0;
+}
+
+#box1:hover {
+  background-color: rgba(57, 97, 119, 0.7);
+}
+#box2:hover {
+  background-color: rgba(57, 97, 119, 0.7);
+}
+
+p {
+  text-align: justify;
+  font-size: medium;
+  line-height: 1.2em;
+}
+#kutaisi-title{
+  font-family: "Kaushan Script", sans-serif;
+  height: 100px;
+  margin-top: 0;
+  text-align: center;
+  color: rgba(69, 55, 40, 0.7);
+  font-size: 60px;
+  text-shadow: 1px 1px 5px  rgba(189, 121, 54, 0.6);
+}
+
+/* adventure.html */
+
+#adv-boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.adv-box{
+  height: 350px;
+  width: 400px;
+  margin: 0 50px;
+}
+.adv-img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.adv-txt{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(69, 55, 40, 0.8);
+  margin-top: -5px;
+  border-radius: 0px 0px 10px 10px;
+  color:white; 
+  font-size: 15px;
+  padding: 10px;
+  display: none;
+}
+
+/* culture.html */
+
+#cult-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.cult-box {
+  height: 450px;
+  width: 350px;
+  margin: 0px 30px; 
+}
+.cult-img {
+  border-top: 20px solid rgb(255, 255, 255, 0.7);
+  border-left: 20px solid rgb(255, 255, 255, 0.7);
+  border-right: 20px solid rgb(255, 255, 255, 0.7);
+  width: 100%;
+  height: 50%;
+}
+.cult-txt {
+  height: 10%;
+  width: 100%;
+  margin: -5px 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background-color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(69, 55, 40);
+}
+.cult-info {
+  margin-top: 0;
+  width: 100%;
+  padding: 10px;
+  display: none;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+#about-info {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  padding-top: 80px; 
+  overflow: auto;
+ }
+.about-txt {
+  max-width: 60vw;
+  padding: 30px 20px;
+  margin: 10px 0px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(69, 55, 40, 0.3);
+  border-radius: 20px;
+}
+.about-txt:hover {
+  color: white;
+  background-color: rgba(69, 55, 40, 0.7);
+  font-weight:bold;
+}
+
+/* food.html */
+#food {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 100px;
+  grid-column-gap: 50px;
+  justify-content: center;
+}
+.food-box{
+  margin: 50px;
+}
+.food-img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0.95;
+}
+
+.food-txt{
+  width: 100%;
+  height: 45%;
+  background-color: rgba(255, 255, 255, 0.974);
+  color: rgba(69, 55, 40, 0.8);
+  margin-top: -5px;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
